@@ -32,11 +32,11 @@ def preorder(node,answer):
         preorder(node.right,answer)
     return answer
 
-def backorder(node,answer):
+def postorder(node,answer):
     if node.left:
-        backorder(node.left,answer)
+        postorder(node.left,answer)
     if node.right:
-        backorder(node.right,answer)
+        postorder(node.right,answer)
     answer.append(node.num)
     return answer
 
