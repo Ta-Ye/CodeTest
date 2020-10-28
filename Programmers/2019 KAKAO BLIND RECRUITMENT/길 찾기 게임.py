@@ -43,4 +43,4 @@ def postorder(node,answer):
 def solution(nodeinfo):
     nodeinfo=[[idx+1]+i for idx,i in enumerate(nodeinfo)]
     node=create(nodeinfo)
-    return[preorder(node,[]),backorder(node,[])]
+    return[preorder(node,[]),postorder(node,[])]
